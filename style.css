@@ -1,0 +1,49 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background: #ddd;
+}
+#turnIndicator {
+  margin: 10px 0;
+  font-weight: bold;
+}
+#board {
+  display: grid;
+  grid-template-columns: repeat(5, 80px);
+  grid-gap: 5px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.cell {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #666;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  background: #fff;
+}
+#modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#modalContent {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  min-width: 300px;
+}
+#choiceButtons button {
+  margin: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+.hidden {
+  display: none !important; /* !important로 확실히 숨김 */
+}

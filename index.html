@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Emotion Land Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 턴 표시 -->
+  <div id="turnIndicator">현재 차례: 팀 1 (빨강)</div>
+  
+  <!-- 5×5 그리드 보드 -->
+  <div id="board"></div>
+
+  <!-- 질문 모달 (처음엔 숨김) -->
+  <div id="modal" class="hidden">
+    <div id="modalContent">
+      <p id="questionText"></p>
+      <div id="choiceButtons"></div>
+      <button id="closeBtn">닫기</button>
+    </div>
+  </div>
+
+  <!-- 스크립트는 DOM 파싱 뒤에 실행 -->
+  <script src="script.js" defer></script>
+</body>
+</html>
